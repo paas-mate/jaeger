@@ -12,3 +12,5 @@ RUN wget https://github.com/jaegertracing/jaeger/releases/download/v1.37.0/jaege
 ENV JAEGER_HOME /opt/sh/jaeger
 
 WORKDIR /opt/sh/jaeger
+
+ENTRYPOINT ["/opt/sh/jaeger/jaeger-all-in-one"]
